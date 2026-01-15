@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>millarX | Strategic Partnership Proposal</title>
+  
+  <!-- SEO & Social Sharing -->
+  <meta name="description" content="A capital-lite platform disrupting the $20B+ Australian novated leasing market. Strategic partnership proposal.">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="millarX | Strategic Partnership Proposal">
+  <meta property="og:description" content="Disrupting a $20B+ market with a capital-lite, automation-first platform.">
+  <meta property="og:image" content="https://millarx.com.au/og-image.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="millarX | Strategic Partnership Proposal">
+  <meta name="twitter:description" content="Disrupting a $20B+ market with a capital-lite, automation-first platform.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --purple-900: #4A044E;
+      --purple-800: #701A75;
+      --purple-700: #86198F;
+      --purple-600: #A21CAF;
+      --purple-500: #C026D3;
+      --purple-400: #D946EF;
+      --purple-300: #E879F9;
+      --purple-200: #F5D0FE;
+      --purple-100: #FAE8FF;
+      --purple-50: #FDF4FF;
+      --pink-600: #DB2777;
+      --pink-500: #EC4899;
+      --pink-400: #F472B6;
+      --teal-600: #0D9488;
+      --teal-500: #14B8A6;
+      --teal-400: #2DD4BF;
+      --amber-500: #F59E0B;
+      --slate-900: #0F172A;
+      --slate-800: #1E293B;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748B;
+      --slate-400: #94A3B8;
+      --slate-300: #CBD5E1;
+      --slate-200: #E2E8F0;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+      --ivory: #FAFAF9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--slate-900);
+      color: var(--slate-300);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Animated Background */
+    .bg-grid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(rgba(134, 25, 143, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(134, 25, 143, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 30%, rgba(134, 25, 143, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 70%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+      animation: pulse 15s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.1) rotate(5deg); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(134, 25, 143, 0.2);
+      border: 1px solid rgba(134, 25, 143, 0.4);
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--purple-300);
+      margin-bottom: 32px;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--teal-500);
+      border-radius: 50%;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    .hero h1 .gradient-text {
+      background: linear-gradient(135deg, var(--purple-400) 0%, var(--pink-500) 50%, var(--purple-300) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-tagline {
+      font-size: 1.5rem;
+      color: var(--slate-400);
+      margin-bottom: 48px;
+      animation: fadeInUp 1s ease-out 0.4s both;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      animation: fadeInUp 1s ease-out 0.6s both;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--teal-400);
+      display: block;
+    }
+
+    .hero-stat-label {
+      font-size: 0.875rem;
+      color: var(--slate-500);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-indicator svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--purple-400);
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(10px); }
+    }
+
+    /* Section Styling */
+    section {
+      padding: 120px 24px;
+      position: relative;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .section-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--purple-400);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: white;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      font-size: 1.125rem;
+      color: var(--slate-400);
+      max-width: 600px;
+      margin: 24px auto 0;
+    }
+
+    /* Industry Snapshot Section */
+    .industry-section {
+      background: linear-gradient(180deg, var(--slate-900) 0%, rgba(74, 4, 78, 0.1) 100%);
+    }
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .industry-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    .industry-visual {
+      position: relative;
+    }
+
+    .market-size-ring {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      margin: 0 auto;
+    }
+
+    .ring-outer {
+      position: absolute;
+      inset: 0;
+      border: 3px solid var(--purple-800);
+      border-radius: 50%;
+      animation: ringPulse 3s ease-in-out infinite;
+    }
+
+    .ring-middle {
+      position: absolute;
+      inset: 30px;
+      border: 2px solid var(--purple-600);
+      border-radius: 50%;
+      animation: ringPulse 3s ease-in-out infinite 0.5s;
+    }
+
+    .ring-inner {
+      position: absolute;
+      inset: 60px;
+      background: linear-gradient(135deg, var(--purple-900) 0%, var(--purple-800) 100%);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @keyframes ringPulse {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); }
+    }
+
+    .ring-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .ring-label {
+      font-size: 0.875rem;
+      color: var(--purple-300);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .industry-content h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    .industry-list {
+      list-style: none;
+    }
+
+    .industry-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: var(--slate-300);
+    }
+
+    .industry-list li::before {
+      content: '×';
+      color: var(--pink-500);
+      font-weight: bold;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .industry-opportunity {
+      margin-top: 32px;
+      padding: 24px;
+      background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(20, 184, 166, 0.05) 100%);
+      border-left: 3px solid var(--teal-500);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .industry-opportunity p {
+      color: var(--teal-400);
+      font-weight: 500;
+    }
+
+    /* Three Pillars Section */
+    .pillars-section {
+      background: var(--slate-900);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 900px) {
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pillar-card {
+      background: linear-gradient(180deg, rgba(74, 4, 78, 0.2) 0%, rgba(74, 4, 78, 0.05) 100%);
+      border: 1px solid rgba(134, 25, 143, 0.3);
+      border-radius: 24px;
+      padding: 40px 32px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--purple-500);
+      box-shadow: 0 20px 60px rgba(134, 25, 143, 0.2);
+    }
+
+    .pillar-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--purple-800);
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      opacity: 0.5;
+    }
+
+    .pillar-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, var(--purple-700) 0%, var(--pink-600) 100%);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .pillar-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: white;
+    }
+
+    .pillar-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .pillar-card .pillar-subtitle {
+      font-size: 0.875rem;
+      color: var(--purple-400);
+      margin-bottom: 20px;
+    }
+
+    .pillar-card p {
+      color: var(--slate-400);
+      font-size: 0.9375rem;
+      margin-bottom: 24px;
+    }
+
+    .pillar-output {
+      padding-top: 20px;
+      border-top: 1px solid rgba(134, 25, 143, 0.2);
+    }
+
+    .pillar-output-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--slate-500);
+      margin-bottom: 8px;
+    }
+
+    .pillar-output-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.875rem;
+      color: var(--teal-400);
+    }
+
+    /* Capital Structure Section */
+    .capital-section {
+      background: linear-gradient(180deg, var(--slate-900) 0%, rgba(74, 4, 78, 0.15) 50%, var(--slate-900) 100%);
+    }
+
+    .capital-comparison {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 900px) {
+      .capital-comparison {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      
+      .highlight-banner {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .strategic-timeline {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .market-segments {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .market-segments > div:nth-child(2) {
+        transform: scale(1) !important;
+      }
+    }
+
+    .capital-card {
+      background: var(--slate-800);
+      border-radius: 20px;
+      padding: 40px;
+      position: relative;
+    }
+
+    .capital-card.incumbent {
+      border: 1px solid var(--slate-700);
+    }
+
+    .capital-card.millarx {
+      background: linear-gradient(135deg, var(--purple-900) 0%, var(--purple-800) 100%);
+      border: 1px solid var(--purple-600);
+    }
+
+    .capital-card h4 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 32px;
+    }
+
+    .capital-card.incumbent h4 {
+      color: var(--slate-400);
+    }
+
+    .capital-card.millarx h4 {
+      color: white;
+    }
+
+    .capital-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .capital-item:last-child {
+      border-bottom: none;
+    }
+
+    .capital-item-label {
+      font-size: 0.9375rem;
+    }
+
+    .capital-item-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .capital-card.incumbent .capital-item-value {
+      color: var(--pink-500);
+    }
+
+    .capital-card.millarx .capital-item-value {
+      color: var(--teal-400);
+    }
+
+    .vs-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .vs-circle {
+      width: 64px;
+      height: 64px;
+      background: var(--slate-900);
+      border: 2px solid var(--purple-600);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      color: var(--purple-400);
+    }
+
+    @media (max-width: 900px) {
+      .vs-divider {
+        padding: 16px 0;
+      }
+    }
+
+    /* Financials Section */
+    .financials-section {
+      background: var(--slate-900);
+    }
+
+    .financials-highlight {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 900px) {
+      .financials-highlight {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .financials-highlight {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .financial-card {
+      background: linear-gradient(180deg, rgba(74, 4, 78, 0.15) 0%, transparent 100%);
+      border: 1px solid rgba(134, 25, 143, 0.2);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .financial-card-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--slate-500);
+      margin-bottom: 12px;
+    }
+
+    .financial-card-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .financial-card-note {
+      font-size: 0.8125rem;
+      color: var(--teal-400);
+    }
+
+    /* Vision Table */
+    .vision-table-wrapper {
+      background: var(--slate-800);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--slate-700);
+    }
+
+    .vision-table-header {
+      background: linear-gradient(135deg, var(--purple-900) 0%, var(--purple-800) 100%);
+      padding: 32px;
+      text-align: center;
+    }
+
+    .vision-table-header h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.75rem;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .vision-table-header p {
+      color: var(--purple-300);
+      font-size: 0.9375rem;
+    }
+
+    .vision-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .vision-table th {
+      background: var(--slate-900);
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--purple-400);
+      font-weight: 600;
+    }
+
+    .vision-table td {
+      padding: 20px;
+      border-bottom: 1px solid var(--slate-700);
+      font-size: 0.9375rem;
+    }
+
+    .vision-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .vision-table tr.highlight {
+      background: linear-gradient(90deg, rgba(20, 184, 166, 0.1) 0%, transparent 100%);
+    }
+
+    .vision-table tr.ultimate {
+      background: linear-gradient(90deg, rgba(134, 25, 143, 0.2) 0%, rgba(236, 72, 153, 0.1) 100%);
+    }
+
+    .vision-table .stage-name {
+      font-weight: 600;
+      color: white;
+    }
+
+    .vision-table .stage-tag {
+      font-size: 0.75rem;
+      color: var(--slate-500);
+      display: block;
+      margin-top: 4px;
+    }
+
+    .vision-table .number {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--slate-300);
+    }
+
+    .vision-table .total {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: var(--teal-400);
+    }
+
+    .vision-table tr.ultimate .total {
+      color: var(--pink-400);
+      font-size: 1.125rem;
+    }
+
+    /* Partnership Section */
+    .partnership-section {
+      background: linear-gradient(180deg, var(--slate-900) 0%, rgba(74, 4, 78, 0.1) 100%);
+    }
+
+    .partnership-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 80px;
+    }
+
+    .partnership-intro p {
+      font-size: 1.25rem;
+      color: var(--slate-300);
+      line-height: 1.8;
+    }
+
+    .synergy-grid {
+      display: grid;
+      grid-template-columns: 1fr 120px 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .synergy-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    .synergy-card {
+      background: var(--slate-800);
+      border-radius: 20px;
+      padding: 40px;
+      border: 1px solid var(--slate-700);
+    }
+
+    .synergy-card h4 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    .synergy-list {
+      list-style: none;
+    }
+
+    .synergy-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0;
+      color: var(--slate-300);
+      font-size: 0.9375rem;
+    }
+
+    .synergy-list li::before {
+      content: '→';
+      color: var(--purple-400);
+      font-weight: bold;
+    }
+
+    .synergy-center {
+      text-align: center;
+    }
+
+    .synergy-plus {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--purple-700) 0%, var(--pink-600) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 300;
+    }
+
+    @media (max-width: 900px) {
+      .synergy-plus {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+      }
+    }
+
+    .synergy-result {
+      margin-top: 80px;
+      text-align: center;
+      padding: 48px;
+      background: linear-gradient(135deg, rgba(134, 25, 143, 0.2) 0%, rgba(236, 72, 153, 0.1) 100%);
+      border-radius: 24px;
+      border: 1px solid rgba(134, 25, 143, 0.3);
+    }
+
+    .synergy-result h4 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .synergy-result p {
+      font-size: 1.125rem;
+      color: var(--slate-300);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      background: linear-gradient(180deg, var(--slate-900) 0%, var(--purple-900) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, rgba(236, 72, 153, 0.2) 0%, transparent 60%);
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .cta-content h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    .cta-content p {
+      font-size: 1.25rem;
+      color: var(--slate-300);
+      margin-bottom: 48px;
+    }
+
+    .cta-quote {
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      color: var(--purple-300);
+      padding: 32px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--purple-900);
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .footer-tag {
+      font-size: 0.875rem;
+      color: var(--purple-300);
+      margin-bottom: 24px;
+    }
+
+    .footer-legal {
+      font-size: 0.75rem;
+      color: var(--purple-400);
+    }
+
+    /* Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .fade-in-delay-1 { animation-delay: 0.1s; }
+    .fade-in-delay-2 { animation-delay: 0.2s; }
+    .fade-in-delay-3 { animation-delay: 0.3s; }
+    .fade-in-delay-4 { animation-delay: 0.4s; }
+
+    /* Responsive Table */
+    @media (max-width: 768px) {
+      .vision-table-wrapper {
+        overflow-x: auto;
+      }
+      
+      .vision-table {
+        min-width: 700px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+
+  <div class="content-wrapper">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Strategic Partnership Proposal</span>
+        </div>
+        <h1>
+          <span class="gradient-text">Disrupting</span> a<br>
+          $20B+ Market
+        </h1>
+        <p class="hero-tagline">A capital-lite platform play in Australian novated leasing</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-value">330K</span>
+            <span class="hero-stat-label">Leases / Year</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">4</span>
+            <span class="hero-stat-label">Incumbents Own 80%+</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">20%</span>
+            <span class="hero-stat-label">Cheaper Than Incumbents</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Industry Snapshot Section -->
+    <section class="industry-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">Market Reality</div>
+          <h2 class="section-title">An Industry Ripe for Disruption</h2>
+          <p class="section-subtitle">A concentrated market with entrenched but inefficient incumbents. Zero genuine, system-led, transparent operators at scale.</p>
+        </div>
+
+        <div class="industry-grid">
+          <div class="industry-visual">
+            <div class="market-size-ring">
+              <div class="ring-outer"></div>
+              <div class="ring-middle"></div>
+              <div class="ring-inner">
+                <span class="ring-value">330K</span>
+                <span class="ring-label">Leases / Year</span>
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 16px; font-size: 0.75rem; color: var(--slate-500);">Source: MMS Group FY23 market share data</div>
+          </div>
+
+          <div class="industry-content">
+            <h3>The Incumbent Playbook</h3>
+            <ul class="industry-list">
+              <li>High, opaque interest rates (rarely disclosed clearly)</li>
+              <li>Bundled add-ons that add little or no real value</li>
+              <li>High-cost procurement models with significant dealer charges</li>
+              <li>Legacy, admin-heavy operations requiring large teams</li>
+              <li>Incentives aligned to margin extraction, not outcomes</li>
+            </ul>
+            <div class="industry-opportunity">
+              <p>There is effectively no genuine, system-led, low-margin, transparent operator doing what we're doing at scale today.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market Segmentation Strategy -->
+        <div style="margin-top: 80px; padding: 48px; background: linear-gradient(135deg, rgba(74, 4, 78, 0.15) 0%, rgba(74, 4, 78, 0.05) 100%); border-radius: 24px; border: 1px solid rgba(134, 25, 143, 0.3);">
+          <div style="text-align: center; margin-bottom: 40px;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 600; color: var(--purple-400); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 12px;">Market Entry Strategy</div>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 2rem; color: white;">Where the Growth Really Is</h3>
+          </div>
+          
+          <div class="market-segments" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+            <!-- Enterprise/Corporate -->
+            <div style="text-align: center; padding: 32px 24px; background: var(--slate-800); border-radius: 16px; opacity: 0.6;">
+              <div style="width: 64px; height: 64px; background: var(--slate-700); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--slate-400)" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+              <div style="font-size: 1.125rem; font-weight: 600; color: var(--slate-400); margin-bottom: 8px;">Top End of Town</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: var(--pink-500); margin-bottom: 12px;">Highly Contracted</div>
+              <div style="font-size: 0.875rem; color: var(--slate-500);">Large corporates locked into multi-year incumbent deals. High switching costs. Not our entry point.</div>
+            </div>
+            
+            <!-- SME & Enterprise - Highlighted -->
+            <div style="text-align: center; padding: 32px 24px; background: linear-gradient(180deg, rgba(20, 184, 166, 0.15) 0%, rgba(20, 184, 166, 0.05) 100%); border-radius: 16px; border: 2px solid var(--teal-500); transform: scale(1.05);">
+              <div style="width: 64px; height: 64px; background: linear-gradient(135deg, var(--teal-600) 0%, var(--teal-500) 100%); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+              </div>
+              <div style="font-size: 1.125rem; font-weight: 600; color: white; margin-bottom: 8px;">SME & Enterprise</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: var(--teal-400); margin-bottom: 12px;">Non-Linear Growth</div>
+              <div style="font-size: 0.875rem; color: var(--slate-300);">Underserved. Overcharged. Ready for a transparent, self-service alternative. <strong style="color: var(--teal-400);">This is our beachhead.</strong></div>
+            </div>
+            
+            <!-- Strategic Move Up -->
+            <div style="text-align: center; padding: 32px 24px; background: var(--slate-800); border-radius: 16px; position: relative;">
+              <div style="position: absolute; top: -12px; right: -12px; background: var(--purple-700); color: white; font-size: 0.625rem; font-weight: 700; padding: 6px 12px; border-radius: 100px; text-transform: uppercase; letter-spacing: 0.1em;">Phase 2</div>
+              <div style="width: 64px; height: 64px; background: linear-gradient(135deg, var(--purple-700) 0%, var(--pink-600) 100%); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M18 15l-6-6-6 6"/>
+                  <path d="M18 9l-6-6-6 6" opacity="0.5"/>
+                </svg>
+              </div>
+              <div style="font-size: 1.125rem; font-weight: 600; color: white; margin-bottom: 8px;">Move Upmarket</div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: var(--purple-400); margin-bottom: 12px;">With Scale & Proof</div>
+              <div style="font-size: 0.875rem; color: var(--slate-400);">Once we have volume, automation proof, and market presence — we negotiate from strength.</div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 32px; padding: 24px 32px; background: var(--slate-800); border-radius: 12px; text-align: center;">
+            <div style="font-size: 1rem; color: var(--slate-300); line-height: 1.7;">
+              <strong style="color: white;">The play:</strong> Win SME & Enterprise where incumbents are weakest → Build undeniable scale → Use that leverage to crack the big end when contracts come up for renewal.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Pillars Section -->
+    <section class="pillars-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">Strategic Framework</div>
+          <h2 class="section-title">Three Pillars to Scale</h2>
+          <p class="section-subtitle">A coordinated approach that unlocks non-linear growth without linear cost increases.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <span class="pillar-number">01</span>
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3>Commercial & Market</h3>
+            <p class="pillar-subtitle">Define where scale comes from</p>
+            <p>Market mechanics, product scope, pricing, funder relationships, payroll integrations, employer partnerships, and regulatory ownership.</p>
+            <div class="pillar-output">
+              <div class="pillar-output-label">Output</div>
+              <div class="pillar-output-value">Predictable volume without sales headcount</div>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <span class="pillar-number">02</span>
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3>Platform & Automation</h3>
+            <p class="pillar-subtitle">Make volume safe and non-linear</p>
+            <p>Hardened architecture, compliance-by-design, end-to-end automation across onboarding, quoting, approval, settlement, and management.</p>
+            <div class="pillar-output">
+              <div class="pillar-output-label">Output</div>
+              <div class="pillar-output-value">Scale 10–20× without adding people</div>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <span class="pillar-number">03</span>
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3>Growth & Distribution</h3>
+            <p class="pillar-subtitle">Drive inflow efficiently</p>
+            <p>Systemised acquisition channels, partnership leverage, inbound and referral-led growth. Paid channels only where unit economics work.</p>
+            <div class="pillar-output">
+              <div class="pillar-output-label">Output</div>
+              <div class="pillar-output-value">~1 hour/week input → consistent demand</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capital Structure Section -->
+    <section class="capital-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">Structural Advantage</div>
+          <h2 class="section-title">Capital-Lite by Design</h2>
+          <p class="section-subtitle">Incumbents scale linearly. We scale exponentially.</p>
+        </div>
+
+        <div class="capital-comparison">
+          <div class="capital-card incumbent">
+            <h4>Incumbent Model</h4>
+            <div class="capital-item">
+              <span class="capital-item-label">Sales Team</span>
+              <span class="capital-item-value">Required</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Admin Staff</span>
+              <span class="capital-item-value">Scales with volume</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Technology</span>
+              <span class="capital-item-value">Legacy systems</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Debt</span>
+              <span class="capital-item-value">Capital intensive</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Margins</span>
+              <span class="capital-item-value">Opaque, high</span>
+            </div>
+          </div>
+
+          <div class="vs-divider">
+            <div class="vs-circle">vs</div>
+          </div>
+
+          <div class="capital-card millarx">
+            <h4>millarX Model</h4>
+            <div class="capital-item">
+              <span class="capital-item-label">Sales Team</span>
+              <span class="capital-item-value">Zero</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Admin Staff</span>
+              <span class="capital-item-value">Near-zero</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Technology</span>
+              <span class="capital-item-value">Platform-native</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Debt</span>
+              <span class="capital-item-value">None</span>
+            </div>
+            <div class="capital-item">
+              <span class="capital-item-label">Margins</span>
+              <span class="capital-item-value">Transparent, fair</span>
+            </div>
+            <div class="capital-item" style="background: rgba(20, 184, 166, 0.15); margin: 16px -40px -40px; padding: 20px 40px; border-radius: 0 0 19px 19px;">
+              <span class="capital-item-label" style="font-weight: 600; color: var(--teal-400);">Price Advantage</span>
+              <span class="capital-item-value" style="font-size: 1.25rem;">~20% cheaper</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Highlight Banner -->
+        <div class="highlight-banner" style="margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+          <div style="background: linear-gradient(135deg, rgba(20, 184, 166, 0.15) 0%, rgba(20, 184, 166, 0.05) 100%); border: 2px solid var(--teal-500); border-radius: 20px; padding: 40px; text-align: center;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 4rem; font-weight: 700; color: var(--teal-400); line-height: 1;">20%</div>
+            <div style="font-size: 1.25rem; color: white; margin: 16px 0 8px; font-weight: 600;">Cheaper Than Incumbents</div>
+            <div style="font-size: 0.9375rem; color: var(--slate-400);">On average, across comparable lease structures. The savings go straight back to the customer.</div>
+          </div>
+          <div style="background: linear-gradient(135deg, rgba(134, 25, 143, 0.15) 0%, rgba(236, 72, 153, 0.1) 100%); border: 2px solid var(--purple-600); border-radius: 20px; padding: 40px; text-align: center;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 2.5rem; font-weight: 700; color: var(--purple-400); line-height: 1;">Mid-2027</div>
+            <div style="font-size: 1.25rem; color: white; margin: 16px 0 8px; font-weight: 600;">EV FBT Exemption Review</div>
+            <div style="font-size: 0.9375rem; color: var(--slate-400);">When the exemption changes, incumbents will struggle. Our capital-lite model is built to win regardless.</div>
+          </div>
+        </div>
+
+        <!-- Post-Exemption Positioning -->
+        <div style="margin-top: 40px; padding: 32px 40px; background: var(--slate-800); border-radius: 16px; border-left: 4px solid var(--amber-500);">
+          <div style="display: flex; align-items: flex-start; gap: 24px;">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: rgba(245, 158, 11, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size: 1.125rem; font-weight: 600; color: white; margin-bottom: 8px;">The Strategic Play: Scale Now, Exit Options Later</div>
+              <div style="color: var(--slate-400); font-size: 0.9375rem; line-height: 1.7;">The EV FBT exemption is our <strong style="color: var(--teal-400);">ticket to scale</strong>. It's the tailwind that lets us build a book large enough to become a genuine market force within 18 months. But here's the real play: if we build a platform that's truly scalable, efficient, and game-changing — and the exemption is later reduced or removed — the ASX-listed incumbents (SG Fleet, MMS, FleetPartners) will be under pressure to dramatically cut operating costs. At that point, <strong style="color: var(--purple-400);">we become the strategic acquisition target</strong> they need. We're not just building a business. We're building optionality: grow independently, partner strategically, or exit to an incumbent who can't build what we've already built.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strategic Timeline -->
+        <div class="strategic-timeline" style="margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: center;">
+          <div style="padding: 32px 24px; background: rgba(20, 184, 166, 0.1); border-radius: 16px; border: 1px solid rgba(20, 184, 166, 0.3);">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: var(--teal-500); margin-bottom: 8px;">NOW → 18 MONTHS</div>
+            <div style="font-size: 1.125rem; font-weight: 600; color: white; margin-bottom: 8px;">Scale the Book</div>
+            <div style="font-size: 0.875rem; color: var(--slate-400);">Ride the EV exemption tailwind to 1,000+ active leases</div>
+          </div>
+          <div style="padding: 32px 24px; background: rgba(134, 25, 143, 0.1); border-radius: 16px; border: 1px solid rgba(134, 25, 143, 0.3);">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: var(--purple-400); margin-bottom: 8px;">MID-2027</div>
+            <div style="font-size: 1.125rem; font-weight: 600; color: white; margin-bottom: 8px;">FBT Review</div>
+            <div style="font-size: 0.875rem; color: var(--slate-400);">Incumbents face cost pressure. We're already lean.</div>
+          </div>
+          <div style="padding: 32px 24px; background: rgba(236, 72, 153, 0.1); border-radius: 16px; border: 1px solid rgba(236, 72, 153, 0.3);">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: var(--pink-400); margin-bottom: 8px;">POST-REVIEW</div>
+            <div style="font-size: 1.125rem; font-weight: 600; color: white; margin-bottom: 8px;">Strategic Options</div>
+            <div style="font-size: 0.875rem; color: var(--slate-400);">Grow, partner, or exit to ASX players who need our platform</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Financials Section -->
+    <section class="financials-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">Economics</div>
+          <h2 class="section-title">Current Position & Vision</h2>
+          <p class="section-subtitle">Validated unit economics. Clear path to scale.</p>
+        </div>
+
+        <div class="financials-highlight">
+          <div class="financial-card">
+            <div class="financial-card-label">Per Lease Revenue</div>
+            <div class="financial-card-value">$2,100</div>
+            <div class="financial-card-note">Upfront + Volume Bonus</div>
+          </div>
+          <div class="financial-card">
+            <div class="financial-card-label">Monthly Mgmt Fee</div>
+            <div class="financial-card-value">$20</div>
+            <div class="financial-card-note">Per active lease</div>
+          </div>
+          <div class="financial-card">
+            <div class="financial-card-label">Fixed Costs</div>
+            <div class="financial-card-value">~$2.5K</div>
+            <div class="financial-card-note">Platform + tooling / month</div>
+          </div>
+          <div class="financial-card">
+            <div class="financial-card-label">Current Mix</div>
+            <div class="financial-card-value">90%</div>
+            <div class="financial-card-note">EV deals (organic)</div>
+          </div>
+        </div>
+
+        <!-- Vision Table -->
+        <div class="vision-table-wrapper">
+          <div class="vision-table-header">
+            <h3>Ultimate Vision — Market Share Milestones</h3>
+            <p>Australian novated leasing market ~330,000 leases p.a.</p>
+          </div>
+          <table class="vision-table">
+            <thead>
+              <tr>
+                <th>Stage</th>
+                <th>Market Share</th>
+                <th>Leases / Year</th>
+                <th>Active Book</th>
+                <th>Upfront + Volume</th>
+                <th>Mgmt Fees p.a.</th>
+                <th>Total Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight">
+                <td>
+                  <span class="stage-name">Current</span>
+                </td>
+                <td class="number">&lt;0.1%</td>
+                <td class="number">~180</td>
+                <td class="number">~300</td>
+                <td class="number">~$0.38m</td>
+                <td class="number">~$0.07m</td>
+                <td class="total">~$0.45m</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="stage-name">Foundation</span>
+                  <span class="stage-tag">Proof of scale</span>
+                </td>
+                <td class="number">0.3%</td>
+                <td class="number">~1,000</td>
+                <td class="number">~2,000</td>
+                <td class="number">~$2.1m</td>
+                <td class="number">~$0.48m</td>
+                <td class="total">~$2.58m</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="stage-name">Scale</span>
+                  <span class="stage-tag">Platform-led</span>
+                </td>
+                <td class="number">1%</td>
+                <td class="number">~3,300</td>
+                <td class="number">~6,600</td>
+                <td class="number">~$6.93m</td>
+                <td class="number">~$1.58m</td>
+                <td class="total">~$8.51m</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="stage-name">Expansion</span>
+                  <span class="stage-tag">Category force</span>
+                </td>
+                <td class="number">3%</td>
+                <td class="number">~9,900</td>
+                <td class="number">~19,800</td>
+                <td class="number">~$20.79m</td>
+                <td class="number">~$4.75m</td>
+                <td class="total">~$25.54m</td>
+              </tr>
+              <tr class="ultimate">
+                <td>
+                  <span class="stage-name">Ultimate Vision</span>
+                  <span class="stage-tag">Category shift</span>
+                </td>
+                <td class="number">10%</td>
+                <td class="number">~33,000</td>
+                <td class="number">~66,000</td>
+                <td class="number">~$69.3m</td>
+                <td class="number">~$15.84m</td>
+                <td class="total">~$85.14m</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Opportunity</div>
+          <h2 class="section-title">Why Partnership. Why Now.</h2>
+        </div>
+
+        <div class="partnership-intro">
+          <p>The platform is built. The economics are validated. The market is waiting. What accelerates everything is the right combination of complementary capabilities.</p>
+        </div>
+
+        <div class="synergy-grid">
+          <div class="synergy-card">
+            <h4>What millarX Brings</h4>
+            <ul class="synergy-list">
+              <li>Operational ACL and regulatory framework</li>
+              <li>End-to-end platform automation</li>
+              <li>Validated unit economics</li>
+              <li>Capital-lite infrastructure</li>
+              <li>EV-focused market positioning</li>
+              <li>Organic acquisition engine (Reddit, referrals)</li>
+            </ul>
+          </div>
+
+          <div class="synergy-center">
+            <div class="synergy-plus">+</div>
+          </div>
+
+          <div class="synergy-card">
+            <h4>What Partnership Unlocks</h4>
+            <ul class="synergy-list">
+              <li>Distribution and channel access</li>
+              <li>Employer relationships at scale</li>
+              <li>Capital for growth acceleration</li>
+              <li>Operational depth and expertise</li>
+              <li>Strategic advisory and governance</li>
+              <li>Market credibility and trust</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="synergy-result">
+          <h4>The Combined Result</h4>
+          <p>A category-defining platform that scales to meaningful market share — creating three clear paths forward: <strong>grow independently</strong>, <strong>partner strategically</strong>, or <strong>exit to incumbents</strong> who'll need what we've built when the market shifts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>Scale now.<br>Options later.</h2>
+        <p>The EV exemption is the window. The next 18 months are the build phase. The platform we create becomes leverage — whether that's growing to 10%, partnering for distribution, or becoming the acquisition target ASX incumbents will need when they're forced to cut costs.</p>
+        <div class="cta-quote">
+          "Your savings. Your pocket. No middleman."
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-logo">millarX</div>
+      <div class="footer-tag">Novated leasing without the BS.</div>
+      <div class="footer-legal">Confidential — Strategic Partnership Proposal — January 2026</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
