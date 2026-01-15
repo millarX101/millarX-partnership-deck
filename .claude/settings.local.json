@@ -7,7 +7,8 @@
       "Bash(git push:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate ASX incumbents and expand exit strategies\n\n- Remove SG Fleet \\(no longer ASX-listed\\)\n- Add Smartgroup to ASX-listed incumbents\n- Add ASX listing as a fourth exit pathway option\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd model comparison table showing competitive advantages\n\nNew \"Why We Win\" section with 14-dimension comparison:\n- Incumbents vs millarX across revenue, costs, scaling, tech, risk\n- Source attribution from MMS, FleetPartners, Smartgroup annual reports\n- Key takeaway highlighting disruptive positioning\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd model comparison table showing competitive advantages\n\nNew \"Why We Win\" section with 14-dimension comparison:\n- Incumbents vs millarX across revenue, costs, scaling, tech, risk\n- Source attribution from MMS, FleetPartners, Smartgroup annual reports\n- Key takeaway highlighting disruptive positioning\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd strategic content strengthening acquisition narrative\n\nNew sections added:\n- The Incumbents'' Problem: 4-card grid showing pain points from their annual reports\n- Operating Wedge: Visual comparing People→Systems flow vs System→Settlement flow\n- Post-FBT Stress Test: Side-by-side comparison of millarX vs incumbent resilience\n- What We''ve Already Proven: Checklist of validated achievements \\(ACL, revenue, zero debt\\)\n- Why Buy, Not Build: Why incumbents can''t replicate internally + acquisition benefits\n- Aggressive Close: Powerful closing quote in CTA section\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
